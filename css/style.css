@@ -5,41 +5,42 @@ html {
     font-family: "Lato", Arial, sans-serif;
     scroll-behavior: smooth;
     height: 100%;
-    overflow:hidden;
-    background:black;
+    overflow: hidden;
+    background: black;
 }
 
-body{
-    color:#fff;
-    margin:0;
-    padding:0;
-    perspective: 1px;    
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
     transform-style: preserve-3d;
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-header{
+header {
     box-sizing: border-box;
     min-height: 100vh;
-    padding:30vw 0 5vw;
+    padding: 30vw 0 5vw;
     position: relative;
     transform-style: inherit;
-    width: 100vw;    
+    width: 100vw;
 }
 
-header h1{
+header h1 {
     margin-top: -100px;
 }
 
-header , header:before{
+header,
+header:before {
     background: 50% 50% / cover;
 }
 
-header::before{
-    bottom:0;
-    content:"";
+header::before {
+    bottom: 0;
+    content: "";
     left: 0;
     position: absolute;
     right: 0;
@@ -50,82 +51,102 @@ header::before{
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
-    min-height: 100vh;    
+    min-height: 100vh;
 }
 
-header *{
-    font-weight: bolder;    
-    text-align:center;
+header * {
+    font-weight: bolder;
+    text-align: center;
     margin: 0;
-    padding:1em 0;
+    padding: 1em 0;
 }
 
-main{    
+main {
     position: absolute;
-    background:black;
+    background: black;
     height: 100%;
     width: 100%;
     margin-bottom: 120px;
 }
 
-.matris-container{
+.matris-container {
     position: relative;
     width: 1020px;
-    height: 520px;        
+    height: 520px;
     margin-left: 50%;
     margin-top: 30%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.matris-1 , .matris-3{
-    width:505px;
+.matris-1,
+.matris-3 {
+    width: 505px;
     height: 255px;
-    border:2px solid #fff;
+    border: 2px solid #fff;
     margin-bottom: 5px;
 }
-.matris-2, .matris-4{
+
+.matris-2,
+.matris-4 {
     position: relative;
-    width:505px;
+    width: 505px;
     height: 255px;
-    border:2px solid #fff;
-    float:right;
+    border: 2px solid #fff;
+    float: right;
     padding-left: -5px;
     margin-top: -264px;
 }
 
-img{
+img {
     width: 500px;
     height: 250px;
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);    
+    transform: translate(-50%, -50%) scaleX(1) scaleY(1);
 }
-i{
+
+i {
     position: absolute;
     z-index: 1;
-    color:lime;    
+    color: lime;
     text-align: center;
-    font-size:2rem;
-    font-weight: bold;        
-    transition:ease-in-out .1s;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: ease-in-out .1s;
 }
-i+i{
+
+i+i {
     position: absolute;
     z-index: 1;
-    color:black;    
-    text-align: center;    
+    color: black;
+    text-align: center;
     left: 354px;
-    color:lime;   
+    color: lime;
 }
-i:hover{
-    background:black;   
-    padding:0 4px;     
+
+i:hover {
+    background: black;
+    padding: 0 6px;
     cursor: pointer;
+    border-radius: 10%;
 }
-h1{
+
+h1 {
     position: relative;
-    top:25%;
+    top: 25%;
+}
+
+.horizontal {    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.vertical{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(-1);
 }
 
 
