@@ -1,5 +1,5 @@
 # image-flip-app
-Image Flip App is made for this reference (https://blog.bitsrc.io/15-app-ideas-to-build-and-level-up-your-coding-skills-28612c72a3b1)
+Coding challenge
 
 ## User Stories
 - User can see a pane containing a single image repeated in a 2x2 matrix
